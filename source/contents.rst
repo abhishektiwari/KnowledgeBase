@@ -9,3 +9,4 @@ Knowledge Base contents
    nosql/index
    ruby/index
    cloud/index
+   jquery/index

@@ -1,0 +1,3 @@
+# Lines starting with '#' are considered comments.
+# Ignore all directories and files in directory build
+build/**/*
