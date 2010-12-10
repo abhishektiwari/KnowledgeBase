@@ -10,3 +10,4 @@ Knowledge Base contents
    ruby/index
    cloud/index
    jquery/index
+   js/index

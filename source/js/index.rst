@@ -6,4 +6,4 @@ jQury contents
 .. toctree::
    :maxdepth: 2
 
-   basics1
+   with
