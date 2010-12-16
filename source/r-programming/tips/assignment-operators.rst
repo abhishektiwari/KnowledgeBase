@@ -3,7 +3,17 @@
 Assignment operators
 ====================
 
-In R you can perform assignment in 3 different ways using ``<-``, ``=`` and ``->`` operators. A simple example demonstrating how you can use them, 
+In R you can perform assignment in 3 different ways using ``<-``, ``=`` and ``<<-`` operators. A simple example demonstrating how you can use them, 
+
+.. code-block:: r
+
+	x = value
+	x <- value
+	x <<- value
+	value -> x
+	value ->> x
+
+Note ``<<-`` assigns ``x`` to ``value`` in the global context. The operators ``<<- or ->>`` cause a search to made through the environment for an existing definition of the variable being assigned. If such a variable is found (and its binding is not locked) then its value is redefined, otherwise assignment takes place in the global environment.
 
 .. code-block:: r
 
@@ -17,7 +27,7 @@ In R you can perform assignment in 3 different ways using ``<-``, ``=`` and ``->
 	> c
 	[1] 14  9 19
 
-The difference between ``=`` and ``<- or ->`` can be clearly observed  when they are used inside the function. The operator ``<- or ->`` can be used anywhere, whereas the operator ``=`` is only allowed at the top level. In addition there also differences in scope. For instance in following example x is not found when we use ``=`` 
+The difference between ``=`` and ``<- or ->`` can be clearly observed  when they are used inside the function. The operator ``<- or ->`` can be used anywhere, whereas the operator ``=`` is only allowed at the top level (e.g., in the complete expression typed at the command prompt) or as one of the subexpressions in a braced list of expressions. In addition there also differences in scope. For instance in following example x is not found when we use ``=`` 
 
 .. code-block:: r
 
