@@ -6,4 +6,5 @@ R Tips
 .. toctree::
    :maxdepth: 3
 
-   assignment-operators.rst
+   assignment-operators
+   vector-factor-matrix-array-list-dataframe
