@@ -11,3 +11,4 @@ Knowledge Base contents
    cloud/index
    jquery/index
    js/index
+   r-programming/index
